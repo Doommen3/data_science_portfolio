@@ -1,0 +1,171 @@
+---
+title: "January crime log"
+format: html
+editor: visual
+---
+
+
+
+**DeKALB** -- The information in this report is compiled from the NIU Police Department\'s [Daily Crime Log](https://www.niu.edu/publicsafety/offenselog.shtml).
+
+\
+
+Any case defined as \"unfounded\" was not included in this list. Any case \"closed by exception\" is closed due to circumstances outside of the investigation (missing a complainant, suspect was arrested for another crime, etc.). Any \"suspended\" case means the investigation is paused until leads become available. All case dispositions (\"open\" or \"closed\" statuses) are subject to updates. All locations provided are general.
+
+\
+
+For more information, contact the [NIU Police Department](https://www.niu.edu/publicsafety/about/contact-us/index.shtml).
+
+\
+
+<iframe style="border: none;" src="https://devinoommen.shinyapps.io/NIU_Crime_Map/" width="100%" height="1200">
+
+</iframe>
+
+**Jan. 2**
+
+-   At 1:50 p.m., criminal sexual assault occurred in DeKalb. This case is referred to another agency.
+
+\
+
+**Jan. 7**
+
+-   At 11:15 p.m., motor vehicle theft and theft over \$500 occurred at Lot X, 615 N. Annie Glidden Road. This case is closed by exception.
+
+\
+
+**Jan. 8**
+
+-   At 12:03 p.m., disorderly conduct occurred at 5 Northern View Circle. This case is suspended.
+
+-   At 7 p.m., burglary and theft over \$500 occurred at Swen Parson Hall, 230 Normal Road. This case is closed by exception.
+
+\
+
+**Jan. 9**
+
+-   At 4:32 p.m., domestic battery and unlawful restraint occurred at Stevenson Residence Hall South, 420 Stadium Drive W. This case is suspended.
+
+\
+
+**Jan. 13**
+
+-   At 3 p.m., disorderly conduct occurred at the Holmes Student Center, 600 Lucinda Ave. This case is closed by exception.
+
+-   At 4:19 p.m., criminal trespass to real property occurred at the Holmes Student Center. This case is closed by arrest.
+
+\
+
+**Jan. 15**
+
+-   At 3:30 p.m., criminal sexual abuse occurred in Rockford. This case is referred to another agency. 
+
+-   At 11:14 p.m., tampering with security, fire or life safety systems occurred at Grant Residence Hall North, 1250 Grant Drive N. This case is suspended.
+
+\
+
+**Jan. 17**
+
+-   At 3:28 a.m., criminal trespass to real property occurred at the Grant Complex, 125000 block of Grant Drive N. This case is closed by arrest.
+
+-   At 4:44 p.m., tampering with security, fire or life safety systems occurred at Grant Residence Hall North. This case is suspended.
+
+\
+
+**Jan. 18**
+
+-   At 10:15 a.m., domestic battery occurred at Patterson Residence Hall East, 501 North Annie Glidden Road. This case is suspended.
+
+\
+
+**Jan. 19**
+
+-   At 4 p.m., criminal damage to government-supported property occurred at Northern View, 1 Northern View Circle. This case is open.
+
+\
+
+**Jan. 20**
+
+-   At 12:30 p.m., battery occurred at the Holmes Student Center. This case is open.
+
+\
+
+**Jan. 21**
+
+-   At 7 a.m., tampering with security, fire and life safety systems occurred at the Stevenson Complex. This case is suspended.
+
+-   At 11:30 a.m., stalking occurred at the psychology/computer science building, 100 Normal Road. This case is suspended.
+
+-   At 4:43 p.m., criminal defacement of property occurred at the Psychology/Computer Science Building. This case is suspended.
+
+-   At 7:43 p.m., criminal sexual assault occurred at the Grant Complex, 1200 Block of Grant Drive. This case is suspended.
+
+-   At 8:02 p.m., tampering with security, fire or life safety systems occurred at the Stevenson Complex. This case is suspended.
+
+\
+
+**Jan. 22**
+
+-   At 7:30 a.m., leaving the scene of a property damage accident occurred at Lot C, 890 Lucinda Ave. This case is closed by arrest.
+
+-   At 1:38 p.m., criminal trespass to real property occurred at Grant Residence Hall North. This case is closed by arrest.
+
+\
+
+**Jan. 24**
+
+-   At 2:46 a.m., illegal possession of alcohol by a minor occurred at Stevenson Residence Hall North, 1350 Stevenson Drive N. This case is suspended.
+
+-   At 8:53 p.m., battery occurred at Neptune Residence Hall West, 800 Lucinda Ave. This case is suspended.
+
+-   At 9:01 p.m., a false fire alarm occurred at the Parking Deck, 175 Normal Road. This case is suspended.
+
+-   At 9:32 p.m., battery occurred at Stevenson Residence Hall North. This case is suspended.
+
+\
+
+**Jan. 26**
+
+-   At 2:35 p.m., leaving the scene of a property damage accident occurred at Lucinda and Stadium Drive East. This case is suspended.
+
+-   At 7:50 p.m., disorderly conduct occurred at Patterson Residence Hall East. This case is suspended.
+
+\
+
+**Jan. 27**
+
+-   At 12:18 a.m., two counts of illegal consumption of alcohol by a minor and two counts of tampering with fire, security and life safety systems occurred at Stevenson Residence Hall North. These cases are closed by exception.
+
+-   At 2:25 a.m., tampering with security, fire and life safety systems occurred at Stevenson Residence Hall North. This case is closed by exception.
+
+-   At 4:36 p.m., battery occurred at 5 Northern View Circle. This case is suspended.
+
+\
+
+**Jan. 28**
+
+-   At 1:50 p.m., domestic battery occurred at Stevenson Residence Hall North. This case is closed by exception.
+
+-   At 2:42 p.m., gambling betting or wagering occurred at the Recreation Center, 325 N. Annie Glidden Road. This case is suspended.
+
+-   At 4:05 p.m., theft under \$500 occurred at Gilbert Residence Hall, 383 Gilbert Drive. This case is open.
+
+-   At 8 p.m., theft under \$500 occurred at the Recreation Center. This case is open.
+
+\
+
+**Jan. 29**
+
+-   At 11:26 a.m., harassment through electronic communications occurred in DeKalb. This case is open.
+
+\
+
+**Jan. 30**
+
+-   At 8:30 a.m., illegal consumption of alcohol by a minor occurred at Stevenson South Residence Hall occurred. This case is cleared by adult arrest.
+
+\
+
+**Jan. 31**
+
+-   At 1:27 p.m., public indecency occurred at Grant Residence Hall North. This case is suspended.
