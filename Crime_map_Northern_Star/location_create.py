@@ -5,7 +5,7 @@ from geopy.extra.rate_limiter import RateLimiter
 # Read data from CSV
 df = pd.read_csv('/Users/devin/NIU_CrimeLogReader/final_crimelogcsv_1_25_cleaned.csv')  # Replace with your CSV file name
 
-API_KEY = 'YOUR_GOOGLE_MAPS_API_KEY'
+API_KEY = 
 
 # Hardcoded addresses for known places
 hardcoded_addresses = {
