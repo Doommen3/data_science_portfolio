@@ -1,0 +1,89 @@
+---
+title: "Determinants of Electrification in India: A Cross Sectional Analysis of Socioeconomic Inequities"
+author: "Devin Oommen"
+format: pdf
+editor: visual
+bibliography: references.bib
+---
+
+```{r, echo = FALSE, warning= FALSE, include = FALSE}
+
+library(tidyverse)
+library(haven)
+library(lmtest)
+library(car)
+library(sf)
+library(pscl)
+library(stargazer)
+library(modelsummary)
+library(knitr)
+library(kableExtra)
+library(gt)
+library(gtsummary)
+
+#load necessary datas ets 
+
+shrug_merged <- readRDS("shrug_merged.rds")
+
+# select variables and rename model using 2011 pop and 2013 economic data 
+shrug_data <- shrug_merged %>%
+  select(
+    electricity_access = pc11_vd_power_all,
+    consumption = secc_cons_pc_rural,
+    power_summerhrs = pc11_vd_power_all_sum,
+    power_winterhrs = pc11_vd_power_all_win,
+    own_land = land_own_share,
+    electricity_domestic = pc11_vd_power_dom,
+    females = pc11_vd_t_f / pc11_vd_t_p,
+    literacy_rate = pc11_pca_p_lit / pc11_pca_tot_p,
+    remote_10k = tdist_10, 
+    remote_50k = tdist_50,
+    poverty = secc_pov_rate_rural,
+    remote_500k = tdist_500, 
+    village_pop = pc11_vd_t_p, 
+    village_male = pc11_vd_t_m,
+    scheduled_pop = pc11_pca_p_sc,
+  )
+
+
+shrug_data <- shrug_data %>% drop_na()
+
+```
+
+## Abstract
+
+This study sets out to understand the determinants of electrification. Electrification is a key requisite for the reduction of poverty through mechanisms such as increases in efficiency, productivity and education. Examining which houses achieve electrification presents policy makers with an opportunity to scrutinize whether there are gaps in access based on socioeconomic and demographic indicators such as wealth and gender. Household assets, landholding and gender of household head can be used as predictors of household electrification. Using the Socioeconomic High Resolution Urban Geographic data set this paper will utilize a cross sectional analysis to examine to what extent existing assets, landholding and gender of household head can predict household electrification. The findings aim to inform policymakers about inequities in electrification and guide policies that address inequitable access to energy infrastructure.
+
+\newpage
+
+## Introduction
+
+Access to electricity is critical for development. For populations to prosper, access to critical infrastructure such as electricity increases various socioeconomic indicators. Educational attainment, income, and health increase as additional households are powered by electricity. Studies that examine electrification in India scrutinize effects of electrification. But what are the key determinants of electrification in India? Existing studies examine benefits households experience after gaining access to electricity, but an apt question to answer is if we can predict which households gain access to electricity. The Socioeconomic High-resolution Rural-Urban Geographic (SHRUG) Platform for India provides a comprehensive data set for India. The data set includes a compilation of population census data, economic census data and various other modules that are linked using shared location ID's.
+
+## Literature Review
+
+A recent study of the impacts of electrification concludes there is variance in effects between small and large populations that receive electrification @burlig2024. In their study @burlig2024 uses SHRUG data to examine the impacts of India's RGGVY (Rajib Gandhi Grameen Vidyutikaran Yojana) program. Their study uses regression discontinuity and difference in differences models to estimate impacts of electrification on economic well being.
+
+## Data
+
+```{r}
+# select variables and rename model using 2011 pop and 2013 economic data 
+
+# electricity access as outcome 
+model3 <- glm(electricity_access ~  poverty +
+                log(village_pop) + remote_10k, data = shrug_data, family = "binomial")
+
+
+
+
+```
+
+```{r}
+# | fig-width: 8
+# consumption as outcome
+model2 <- lm(consumption ~ electricity_access + power_summerhrs +
+               poverty + females + I(females * poverty), data = shrug_data)
+
+
+stargazer(model2)
+```
