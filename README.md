@@ -5,8 +5,7 @@ Data Science projects
 This was a final project completed in a Computational Methods in Statistics (Stat 415) course at Northern Illinois University. The objective of the project was to simulate agricultural yields. 
 
 
-[Determinants and Consequences of Electrification in India]
-(https://github.com/Doommen3/data_science_portfolio/tree/main/Consequences%20and%20Determinants%20of%20Electrification%20in%20India/Independentstudy_honorsproject)  
+[Determinants and Consequences of Electrification in India](https://github.com/Doommen3/data_science_portfolio/tree/main/Consequences%20and%20Determinants%20of%20Electrification%20in%20India/Independentstudy_honorsproject)  
 Abstract:  
 
 This study examines the effects of village-level electrification on socioeconomic welfare in rural India, with a focus on inequities in access and outcomes. Electrification is widely regarded as a catalyst for development, improving productivity, educational attainment, and income. However, the distribution of these benefits remains uneven. Using cross-sectional data from the Socioeconomic High Resolution Urban Geographic (SHRUG) dataset, this paper investigates the relationship between eelctricity access and estimated monthly consumption per capita, a proxy for welfare.
