@@ -1,0 +1,139 @@
+library(tidyverse)
+
+
+simCorn <- function(overallEffect=0, fertilizerEffect=c(0,0,0), rowEffect=c(0,0,0), colEffect=c(0,0,0),
+                    seed=NULL, dist = rnorm, ...) {
+  
+  
+  if ((!is.numeric(seed)) && (!is.null(seed))) 
+    stop("You did not enter a valid seed")
+  
+  n <- length(fertilizerEffect)^2
+
+    set.seed(seed)
+    error <- dist(n, ...)
+    
+    Fertilizer = factor(c("A", "B", "C", "C", "A", "B", "B", "C", "A"))
+    Row = factor(c(1, 1, 1, 2, 2, 2, 3, 3, 3))
+    Column = factor(c(1, 2, 3, 1, 2, 3, 1, 2, 3))
+    Yield = overallEffect + fertilizerEffect + rowEffect + colEffect + error
+    x <- data.frame(Fertilizer, Row, Column, Yield)
+  
+  return (x)
+}
+ 
+simCorn()
+simCorn(overallEffect=10,seed=2123,dist=rgamma,shape=2)
+
+
+mu <- 7
+alpha <- c(1,2,3)
+beta <- c(2,2,1)
+gamma <- c(3,3,2)
+y <- simCorn(overallEffect=mu, fertilizerEffect=alpha, rowEffect=beta, colEffect=gamma,
+             seed=29429, rnorm, mean=3, sd=2)
+y
+
+
+p_vector_1 <- vector(mode = "numeric", length = 100)
+set.seed(1331)
+for (k in 1:100) { 
+  
+  y <- simCorn(overallEffect=10, dist=rnorm)
+  fitCorn <- lm(Yield ~ Fertilizer + Row + Column, data=y)
+  pValue[k] <- anova(fitCorn)$"Pr(>F)"[1]
+  p_vector_1[k] <- pValue[k]
+
+}
+
+
+p_vector_2 <- vector(mode = "numeric", length = 100)
+set.seed(18694)
+
+
+for (k in 1:100) { 
+  
+  y <- simCorn(overallEffect=10, c(1,2,3), c(0,0,1), c(0,0,1), dist=rnorm)
+  fitCorn <- lm(Yield ~ Fertilizer + Row + Column, data=y)
+  pValue[k] <- anova(fitCorn)$"Pr(>F)"[1]
+  p_vector_2[k] <- pValue[k]
+  
+}
+
+
+p_vector_3 <- vector(mode = "numeric", length = 100)
+set.seed(6516)
+
+for (k in 1:100) { 
+  
+  y <- simCorn(overallEffect=10, c(1,2,3), c(1,0,1), c(0,1,1), dist=rnorm)
+  fitCorn <- lm(Yield ~ Fertilizer + Row + Column, data=y)
+  pValue[k] <- anova(fitCorn)$"Pr(>F)"[1]
+  p_vector_3[k] <- pValue[k]
+  
+}
+
+
+p_vector_4 <- vector(mode = "numeric", length = 100)
+set.seed(5)
+
+for (k in 1:100) { 
+  
+  y <- simCorn(overallEffect=10, c(1,2,3), c(1,0,1), c(0,1,1), dist=rnorm)
+  fitCorn <- lm(Yield ~ Fertilizer + Row + Column, data=y)
+  pValue[k] <- anova(fitCorn)$"Pr(>F)"[1]
+  p_vector_4[k] <- pValue[k]
+  
+}
+
+
+
+p_vector_5 <- vector(mode = "numeric", length = 100)
+set.seed(574)
+for (k in 1:100) { 
+  
+  y <- simCorn(overallEffect=10, c(1,2,3), c(0,0,1), c(0,0,1), dist=rexp)
+  fitCorn <- lm(Yield ~ Fertilizer + Row + Column, data=y)
+  pValue[k] <- anova(fitCorn)$"Pr(>F)"[1]
+  p_vector_5[k] <- pValue[k]
+  
+}
+
+
+
+p_vector_6 <- vector(mode = "numeric", length = 100)
+set.seed(9576)
+
+for (k in 1:100) { 
+  
+  y <- simCorn(overallEffect=10, c(1,2,3), c(1,0,1), c(0,1,1), dist=rexp)
+  fitCorn <- lm(Yield ~ Fertilizer + Row + Column, data=y)
+  pValue[k] <- anova(fitCorn)$"Pr(>F)"[1]
+  p_vector_6[k] <- pValue[k]
+  
+}
+
+
+p_vector_7 <- vector(mode = "numeric", length = 100)
+set.seed(9743)
+
+
+for (k in 1:100) { 
+  
+  y <- simCorn(overallEffect=10, c(1,2,3), c(0,1,0), c(0,1,0), dist=rexp)
+  fitCorn <- lm(Yield ~ Fertilizer + Row + Column, data=y)
+  pValue[k] <- anova(fitCorn)$"Pr(>F)"[1]
+  p_vector_5[k] <- pValue[k]
+  
+}
+
+
+hist(p_vector_1, breaks = c(0.0, 0.2, 0.4, 0.6, 0.8, 1.0), col = "blue", )
+
+hist(p_vector_2, breaks = c(0.0, 0.2, 0.4, 0.6, 0.8, 1.0), col = "blue", )
+hist(p_vector_3, breaks = c(0.0, 0.2, 0.4, 0.6, 0.8, 1.0), col = "blue", )
+hist(p_vector_4, breaks = c(0.0, 0.2, 0.4, 0.6, 0.8, 1.0), col = "blue", )
+hist(p_vector_5, breaks = c(0.0, 0.2, 0.4, 0.6, 0.8, 1.0), col = "blue", )
+hist(p_vector_6, breaks = c(0.0, 0.2, 0.4, 0.6, 0.8, 1.0), col = "blue", )
+hist(p_vector_7, breaks = c(0.0, 0.2, 0.4, 0.6, 0.8, 1.0), col = "blue", )
+
