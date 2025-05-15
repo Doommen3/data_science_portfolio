@@ -3,7 +3,7 @@ title: ""
 author: "" 
 date: "" 
  
-format: pdf
+format: gfm
 documentclass: article
 editor: visual
 bibliography: references.bib
