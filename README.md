@@ -6,6 +6,9 @@ This was a final project completed in a Computational Methods in Statistics (Sta
 
 
 [Determinants and Consequences of Electrification in India](https://github.com/Doommen3/data_science_portfolio/tree/main/Consequences%20and%20Determinants%20of%20Electrification%20in%20India/Independentstudy_honorsproject)  
+
+This is an independent study project completed that explores the effect of electrification on villages in India. The project was completed over the course of 16 weeks under advising from a political science professor at Northern Illinois Univeristy. 
+
 Abstract:  
 
 This study examines the effects of village-level electrification on socioeconomic welfare in rural India, with a focus on inequities in access and outcomes. Electrification is widely regarded as a catalyst for development, improving productivity, educational attainment, and income. However, the distribution of these benefits remains uneven. Using cross-sectional data from the Socioeconomic High Resolution Urban Geographic (SHRUG) dataset, this paper investigates the relationship between eelctricity access and estimated monthly consumption per capita, a proxy for welfare.
