@@ -13,3 +13,6 @@ This study examines the effects of village-level electrification on socioeconomi
 The analysis employs multiple linear regression to control for factors such as income, poverty rates, gender composition, and land ownership. Results indicate that access to domestic electricity increases estimated monthly consumption by 1.6%, highlighting its positive impact on welfare. However, access to commercial electricity shows no significant effect, underscoring the limited role of electrification in non-agricultural sectors. The findings reveal that higher-income villages are more likely to benefit from electrification, exacerbating existing socioeconomic inequities.
 
 This study contributes to the growing body of literature by offering village-level insights into the determinants and consequences of electrification. Policymakers must address distributional disparities and prioritize targeted strategies-such as integrating gender empowerment and poverty alleviation programs- to ensure equitable access and masximize the developmental benefits of rural electrification.
+
+[Vote total scraping](https://github.com/Doommen3/data_science_portfolio/tree/main/vote_total_scraping/vote_total_scraping)  
+The vote total scraping project involved collecting presidential election data from each state for a professor. 
