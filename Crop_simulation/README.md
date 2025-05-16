@@ -1,5 +1,7 @@
 # Final Project
 
+This project prompted students to create a simulation to test the effect of a hypothetical experiment of fertilizer on crop yields. The project used a latin square design and simulated the experiment in 7 ways. Histograms were plotted for each simulation. 
+
 ``` r
 library(tidyverse)
 ```
