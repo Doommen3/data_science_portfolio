@@ -1,1 +1,3 @@
+For this project, I wanted to visualize crime happening on campus for the student newspaper at NIU. This increased traffic, user engagement and stickiness for the website.
 
+The NIU police department releases a daily crime log in PDF format. I created a Python script that downloaded the crime logs from the campus police website. Next I created a script to scrape the data from the PDF's. The data did not scrape from the pdf's cleanly, so some manual data cleaning was required at the end to ensure accuracy. Finally, I created an R shiny app that visualized the crimes by the locations listed on the crime logs. To do this I used the google maps API and plotted crimes to a map using leaflet. 
