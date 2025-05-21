@@ -4,6 +4,7 @@ Data Science projects
 Below is a list of data science and ETL related projects I have completed. 
 
 [NIU Campus Crime Map](https://github.com/Doommen3/data_science_portfolio/tree/main/Crime_map_Northern_Star)  
+The student newspaper at Northern Illinois University had been publishing a crime log every month by manually typing out crimes listed in the crime log. I created a program to scrape the crime logs and visualize the crimes instead. 
 
 [Crop Simulation](https://github.com/Doommen3/data_science_portfolio/tree/main/Crop_simulation)  
 This was a final project completed in a Computational Methods in Statistics (Stat 415) course at Northern Illinois University. The objective of the project was to simulate agricultural yields. 
