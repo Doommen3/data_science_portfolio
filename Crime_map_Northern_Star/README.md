@@ -1,5 +1,9 @@
 For this project, I wanted to visualize crime happening on campus for the student newspaper at NIU. This increased traffic, user engagement and stickiness for the website.
 
+[Demo](https://devinoommen.shinyapps.io/NIU_Crime_Map/)  
+
+
+
 ![My Diagram](crime_map_webimage.png)
 
 The NIU police department releases a daily crime log in PDF format.
