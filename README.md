@@ -1,26 +1,45 @@
-# data_science_portfolio
-Data Science projects 
+<h1 align="center">Data Science Portfolio</h1>
 
-Below is a list of data science and ETL related projects I have completed. 
+<p align="center">A portfolio and archive of coursework, research, and applied data projects by Devin Oommen.</p>
 
-[NIU Campus Crime Map](https://github.com/Doommen3/data_science_portfolio/tree/main/Crime_map_Northern_Star)  
-The student newspaper at Northern Illinois University had been publishing a crime log every month by manually typing out crimes listed in the crime log. I created a program to scrape the crime logs and visualize the crimes instead. 
+## Overview
 
-[Crop Simulation](https://github.com/Doommen3/data_science_portfolio/tree/main/Crop_simulation)  
-This was a final project completed in a Computational Methods in Statistics (Stat 415) course at Northern Illinois University. The objective of the project was to simulate agricultural yields. 
+This repository collects statistics, data-engineering, and visualization work spanning academic research and applied tooling — from an honors thesis built on a 484,630-village dataset to web-scraping pipelines and interactive R/Shiny apps. It serves as an archive of foundational projects; the most polished pieces have since graduated into their own standalone repositories (linked below).
 
+## Highlights
 
-[Determinants and Consequences of Electrification in India](https://github.com/Doommen3/data_science_portfolio/tree/main/Consequences%20and%20Determinants%20of%20Electrification%20in%20India/Independentstudy_honorsproject)  
+### Consequences and Determinants of Electrification in India — Honors Thesis
 
-This is an independent study project completed that explores the effect of electrification on villages in India. The project was completed over the course of 16 weeks under advising from a political science professor at Northern Illinois Univeristy. 
+The standout project: a 16-week independent-study honors thesis advised by a political science professor at Northern Illinois University, examining how village-level electrification affects socioeconomic welfare across rural India.
 
-Abstract:  
+- **Scale.** Cross-sectional analysis of **484,630 Indian villages** using the Socioeconomic High Resolution Urban Geographic (SHRUG) dataset.
+- **Method.** Multiple linear regression in R (with `sf` for spatial data), controlling for income, poverty rates, gender composition, and land ownership.
+- **Findings.** Access to domestic electricity is associated with a **~1.6% increase** in estimated monthly per-capita consumption (a welfare proxy), with the model achieving an **R² of 0.82**. Commercial electrification showed no significant effect, and higher-income villages were more likely to capture the benefits — pointing to distributional inequities in access.
+- **Rigor.** Grounded in academic literature with full citations, and **accepted for presentation at the Midwest Political Science Association (MPSA)** conference.
 
-This study examines the effects of village-level electrification on socioeconomic welfare in rural India, with a focus on inequities in access and outcomes. Electrification is widely regarded as a catalyst for development, improving productivity, educational attainment, and income. However, the distribution of these benefits remains uneven. Using cross-sectional data from the Socioeconomic High Resolution Urban Geographic (SHRUG) dataset, this paper investigates the relationship between eelctricity access and estimated monthly consumption per capita, a proxy for welfare.
+The complete write-up, R analysis scripts, spatial maps, and references live in [`Consequences and Determinants of Electrification in India`](./Consequences%20and%20Determinants%20of%20Electrification%20in%20India/Independentstudy_honorsproject).
 
-The analysis employs multiple linear regression to control for factors such as income, poverty rates, gender composition, and land ownership. Results indicate that access to domestic electricity increases estimated monthly consumption by 1.6%, highlighting its positive impact on welfare. However, access to commercial electricity shows no significant effect, underscoring the limited role of electrification in non-agricultural sectors. The findings reveal that higher-income villages are more likely to benefit from electrification, exacerbating existing socioeconomic inequities.
+## Projects in this repo
 
-This study contributes to the growing body of literature by offering village-level insights into the determinants and consequences of electrification. Policymakers must address distributional disparities and prioritize targeted strategies-such as integrating gender empowerment and poverty alleviation programs- to ensure equitable access and masximize the developmental benefits of rural electrification.
+- **[Consequences and Determinants of Electrification in India](./Consequences%20and%20Determinants%20of%20Electrification%20in%20India/Independentstudy_honorsproject)** — Honors thesis (above).
+- **[Crime_map_Northern_Star](./Crime_map_Northern_Star)** — A pipeline that scrapes NIU's monthly campus crime logs (previously transcribed by hand) out of PDFs, geocodes them, and visualizes the incidents on a map. Python + R/Shiny.
+- **[Crop_simulation](./Crop_simulation)** — A Stat 415 (Computational Methods in Statistics) final project simulating agricultural yields under a Latin-square experimental design, running the experiment seven ways and plotting yield distributions. R.
+- **[WorkoutVizApp](./WorkoutVizApp)** — An R/Shiny app for visualizing weekly exercise data by body part and movement.
+- **[vote_total_scraping](./vote_total_scraping)** — Collecting and cleaning U.S. presidential election vote totals by state from source PDFs into structured datasets, for a faculty research project. Python.
 
-[Vote total scraping](https://github.com/Doommen3/data_science_portfolio/tree/main/vote_total_scraping/vote_total_scraping)  
-The vote total scraping project involved collecting presidential election data from each state for a professor. 
+## Polished standalone repos
+
+Several projects have evolved into dedicated, production-grade repositories:
+
+- **[Follow The Money IL](https://github.com/Doommen3/Illinois_campaign_finance)** — Illinois campaign-finance data.
+- **[Legislative Bill Stats](https://github.com/Doommen3/congress-bill-stats)** — Congressional bill statistics.
+- **[DeKalb Scanner Alerts](https://github.com/Doommen3/police_scanner_transcription)** — Police-scanner transcription and alerting.
+- **[NIU Crime Map](https://github.com/Doommen3/Crimelogreader)** — The polished successor to `Crime_map_Northern_Star`.
+
+## Author
+
+**Devin Oommen** — [devinoommen.com](https://devinoommen.com) · Oommen & Company
+
+## License
+
+Released under the [MIT License](./LICENSE).
