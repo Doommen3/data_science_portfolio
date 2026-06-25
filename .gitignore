@@ -1,0 +1,21 @@
+# Secrets / local config
+.env
+*.key
+*.pem
+id_rsa*
+credentials*.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*-venv/
+
+# R
+.Rproj.user/
+.Rhistory
+
+# OS / editors
+.DS_Store
+.idea/
